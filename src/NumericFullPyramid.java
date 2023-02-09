@@ -9,8 +9,8 @@ public class NumericFullPyramid {
             for(int j=0;j<i;j++){
                 System.out.print((j+i)+" ");
             }
-            for(int j=(2*i)-2;j<i;j++){
-                System.out.print(j+" ");
+            for(int k=2*i-2;k>=i;k--){
+                System.out.print(k+" ");
             }
             for(int j=0;j<N-i;j++){
                 System.out.print(0+" ");

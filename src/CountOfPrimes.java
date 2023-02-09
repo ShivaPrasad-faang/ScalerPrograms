@@ -7,7 +7,7 @@ public class CountOfPrimes {
        // System.out.println(isPrime(inpp));
         int count=0;
         for(int i=2;i<=inpp;i++){
-            if(isPrime(i)==0){
+            if(isPrimes(i)==true){
                 count=count+1;
             }
         }
@@ -23,6 +23,16 @@ public class CountOfPrimes {
         }
         return result;
     }
+    public static boolean isPrimes(int Inp){
+        int i=2;
+        boolean result=true;
+        for(;i*i<Inp;i++){
+            if(Inp%i==0){
+                result=false;
+                return result;
+            }
+        }
+        return result;
+    }
 
-    
 }
